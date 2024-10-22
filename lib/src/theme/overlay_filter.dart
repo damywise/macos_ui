@@ -68,6 +68,7 @@ class MacosOverlayFilter extends StatelessWidget {
         child: ClipRRect(
           borderRadius: borderRadius,
           child: BackdropFilter(
+            blendMode: BlendMode.src,
             filter: ImageFilter.blur(
               sigmaX: 20.0,
               sigmaY: 20.0,
